@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>blabla</title>
+	<style>
+		.circle{
+			background-color: #C44040;
+			border-radius: 60px;
+			height: 120px;
+			width: 120px;
+		}
+		.square{
+			background-color: #171616;
+			height: 120px;
+			width: 120px;
+		}
+		.target{
+			background-color: #133CEF;
+			border-radius: 160px;
+			height: 320px;
+			margin: 20px auto;
+			width: 320px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Arrastrar/soltar</h1>
+	<hr>
+	<section class="circle"></section>
+	<section class="square"></section>
+	<section class="target"></section>
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.circle, .square').draggable({
+				cursor: 'move',
+				revert: 'invalid'
+			});
+			$('.target').droppable({
+				accept: ".circle",
+				drop: function(){
+					$(this).css('background-color', '#C44040');
+					$('.circle').css('background-color', '#fff');
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>

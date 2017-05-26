@@ -1,0 +1,78 @@
+*{
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	outline: none;
+	text-decoration: none;
+}
+h1,h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+section#container{
+	margin-left: 265px;
+	width: 900px;
+	height: 530px;
+	
+}
+
+section#container article{
+	width: 200px;
+	margin-top: 50px ;
+	margin-left: 50px;
+	display: inline-block;
+	vertical-align: top;
+}
+h2{
+	padding-bottom: 14px;
+	border-bottom: 2px solid  #000;
+}
+section#container article div{
+	width: 223px;
+	height: 111px;
+	border: 1px solid #000;
+	margin: 20px auto;
+	
+}
+#caja1, #cajauno, #caja2, #cajados, #caja3, #cajatres{
+	background-image: url(imgs/dinero.jpg);
+}
+
+#twocop{
+	background-image: url(imgs/2.png);
+	
+}
+#twocopn{
+	background-image: url(imgs/e2.png);
+	
+}
+#twousd{
+	background-image: url(imgs/2d.png);
+	
+}
+
+#veintecop{
+	background-image: url(imgs/20.png);
+	
+}
+#veintecopn{
+	background-image: url(imgs/e20.png);
+	
+}
+#veinteusd{
+	background-image: url(imgs/20d.png);
+	
+}
+
+#cincuentacop{
+	background-image: url(imgs/50.png);
+	
+}
+#cincuentacopn{
+	background-image: url(imgs/e50.png);
+	
+}
+#cincuentausd{
+	background-image: url(imgs/50d.png);
+	
+}

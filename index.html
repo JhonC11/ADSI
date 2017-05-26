@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Billetes Evolucion</title>
+	<link rel="stylesheet" href="esto.css">
+</head>
+<body>
+	<h1>Billetes Evolucion</h1>
+	<hr>
+	
+	<section id="container">
+		
+
+		
+		<article>
+			<h2>Viejos</h2>
+			<div id="twocop" class="billete"></div>
+			<div id="veintecop" class="billete"></div>
+			<div id="cincuentacop" class="billete"></div>
+		</article>
+		<article>
+			<h2>Nuevos</h2>
+			<div id="caja1" class="billete"></div>
+			<div id="caja2" class="billete"></div>
+			<div id="caja3" class="billete"></div>
+		</article>
+		<article>
+			<h2>Dolares</h2>
+			<div id="cajauno" class="billete"></div>
+			<div id="cajados" class="billete"></div>
+			<div id="cajatres" class="billete"></div>
+		</article>
+
+	</section>
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#twocop').draggable({
+				cursor: 'crosshair',
+				revert: 'invalid',
+				snap: "article div",
+				containment: "section#container",
+			});
+			$('#caja1').droppable({
+				accept: "#twocop",
+				drop: function(){
+					$('#twocop').attr('id', 'twocopn');
+				}
+			});
+			$('#cajauno').droppable({
+				accept: "#twocopn",
+				drop: function(){
+					$('#twocopn').attr('id', 'twousd');
+				}
+			});
+
+
+
+			
+			$('#veintecop').draggable({
+				cursor: 'move',
+				revert: 'invalid',
+				snap: "article div",
+				containment: "section#container",
+
+
+			});
+			$('#caja2').droppable({
+				accept: "#veintecop",
+				drop: function(){
+					$('#veintecop').attr('id', 'veintecopn');
+				}
+			});
+			$('#cajados').droppable({
+				accept: "#veintecopn",
+				drop: function(){
+					$('#veintecopn').attr('id', 'veinteusd');
+				}
+			});
+			$('#cincuentacop').draggable({
+				cursor: 'move',
+				revert: 'invalid',
+				snap: "article div",
+				containment: "section#container",
+
+
+			});
+			$('#caja3').droppable({
+				accept: "#cincuentacop",
+				drop: function(){
+					$('#cincuentacop').attr('id', 'cincuentacopn');
+				}
+			});
+			$('#cajatres').droppable({
+				accept: "#cincuentacopn",
+				drop: function(){
+					$('#cincuentacopn').attr('id', 'cincuentausd');
+				}
+			});
+		});
+
+
+	</script>
+	
+</body>
+</html>

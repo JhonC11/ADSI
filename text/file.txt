@@ -1,0 +1,6 @@
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugit perferendis repellat ex expedita doloremque ullam tempora magni nostrum amet quia nisi sit quas optio consequatur rerum iure facilis, harum nesciunt ab earum ducimus sequi. Aliquam dicta velit nihil dolores nesciunt aperiam consectetur delectus voluptatibus enim, deserunt dolorem dolore maxime rem similique amet tempore excepturi praesentium autem. Eius dolore architecto delectus dolor quos porro ad consequuntur sit itaque recusandae accusamus, fugit facere enim neque aspernatur necessitatibus commodi perferendis consequatur aut.
+</p>
+<p id="origen">
+	Archivo de texto, localizado en text/.txt
+</p>
